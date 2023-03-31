@@ -38,4 +38,8 @@ public class TopicController {
     public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
     }
+
+    public void updateTopics(@RequestBody Topic topic, @PathVariable String id){
+        topicService.updateTopic (id, topic);
+    }
 }
