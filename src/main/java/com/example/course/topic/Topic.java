@@ -1,5 +1,7 @@
 package com.example.course.topic;
+import jakarta.persistence.Entity;
 
+@Entity
 public class Topic {
     private  String id;
     private String name;
